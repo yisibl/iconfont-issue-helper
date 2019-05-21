@@ -1,11 +1,11 @@
 <template>
   <nav class="app-header">
     <div class="container">
-      <a class="brand" href="#">
+      <a class="brand" target="_blank" href="https://www.iconfont.cn" rel="noopener noreferrer">
         <img
           class="logo"
-          src="../assets/images/logo.png"
-          alt="Vue's logo"
+          src="//gw.alicdn.com/tfs/TB1wyVMXRCw3KVjSZR0XXbcUpXa-106-19.svg"
+          alt="iconfont's logo"
           height="24"
         >
         Issue Helper
@@ -40,8 +40,8 @@ export default {
 @import "../style/imports"
 
 .app-header
-  background lighten($vue-ui-color-light-neutral, 60%)
-  border-bottom solid 1px $vue-ui-color-light-neutral
+  background #000
+  border-bottom solid 1px #333
 
   &,
   .container,
@@ -58,7 +58,7 @@ export default {
     box-sizing border-box
 
   .brand
-    color $vue-ui-color-dark
+    color $iconfont-ui-color-dark
     .logo
       margin-right 8px
 
@@ -74,6 +74,6 @@ export default {
     cursor default
     &:not(.active)
       cursor pointer
-      color $vue-ui-color-dark
+      color $iconfont-ui-color-dark
 
 </style>

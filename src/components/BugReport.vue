@@ -2,8 +2,7 @@
   <div class="bug-report" style="margin:0">
     <div class="vue-ui-grid col-2 default-gap">
       <VueFormField
-        :title="i18n('version-title')"
-        :subtitle="i18n('version-subtitle')"
+        :title="i18n('nickname-title')"
       >
         <VueTypeAhead
           v-model="attrs.version"
@@ -13,6 +12,10 @@
           show-max="30"
           restrict-choice
           required
+        />
+        <i18n
+          slot="subtitle"
+          id="nickname-subtitle"
         />
       </VueFormField>
 

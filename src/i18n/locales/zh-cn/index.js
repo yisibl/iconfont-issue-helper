@@ -12,9 +12,8 @@ export default {
   'type-title': '这是一个',
   'title-title': 'Issue 标题',
 
-  'version-title': '版本',
-  'version-subtitle': '请检查问题是否存在于 Vue 的最新版本中。',
-
+  'nickname-title': 'iconfont 昵称',
+  'nickname-subtitle': require('./nickname-subtitle.md'),
   'repro-title': '重现链接',
   'repro-subtitle': require('./repro-subtitle.md'),
   'repro-modal-title': '关于重现',
@@ -43,7 +42,7 @@ export default {
   'rationale-title': '这个功能解决了什么问题？',
   'rationale-subtitle': require('./rationale-subtitle.md'),
 
-  'proposal-title': '你期望的 API 是怎样的？',
+  'proposal-title': '你期望的结果是怎样的？',
   'proposal-subtitle': require('./proposal-subtitle.md'),
 
   // preview

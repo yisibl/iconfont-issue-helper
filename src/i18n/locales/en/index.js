@@ -12,8 +12,8 @@ export default {
   'type-title': 'This is a',
   'title-title': 'Issue title',
 
-  'version-title': 'Version',
-  'version-subtitle': 'Check if the issue is reproducible with the latest stable version of Vue.',
+  'nickname-title': 'iconfont nickname',
+  'nickname-subtitle': require('./nickname-subtitle.md'),
 
   'repro-title': 'Link to minimal reproduction',
   'repro-subtitle': require('./repro-subtitle.md'),

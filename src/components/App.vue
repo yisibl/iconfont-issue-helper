@@ -126,10 +126,8 @@
   <footer class="app-footer">
     <p>&hellip;</p>
     <small>
-      Built with
-      <a href="https://github.com/vuejs/vue-cli">vue-cli</a>
-      &centerdot;
-      Check out source on <a href="https://github.com/vuejs/vue-issue">GitHub</a>
+      Forked from
+      <a href="https://github.com/vuejs/vue-issue-helper">vue-issue-helper</a> to <a href="https://github.com/yisibl/iconfont-issue-helper">iconfont-issue-helper</a>
     </small>
   </footer>
 </div>
@@ -189,7 +187,7 @@ export default {
   },
 
   created () {
-    this.repo = getQuery().repo || 'vuejs/vue'
+    this.repo = getQuery().repo || 'thx/iconfont-plus'
   },
 
   methods: {
@@ -248,3 +246,12 @@ export default {
   text-align center
   margin 24px 0
 </style>
+
+<style lang="stylus">
+p
+ margin-bottom 12px
+
+.vue-ui-modal>.backdrop
+  background: rgba(9, 9, 9, 0.6);
+</style>
+
