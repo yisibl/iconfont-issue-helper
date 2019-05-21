@@ -4,13 +4,8 @@
       <VueFormField
         :title="i18n('nickname-title')"
       >
-        <VueTypeAhead
-          v-model="attrs.version"
-          :suggestions="suggestions"
-          :loading="loadingVersion"
-          show-all
-          show-max="30"
-          restrict-choice
+        <VueInput
+          v-model="attrs.nickname"
           required
         />
         <i18n
@@ -170,6 +165,7 @@ export default {
         cliEnvInfo: '',
       },
       versions: [],
+      nickname: '',
       loadingVersion: false,
       reproNotAvailable: false
     }
@@ -230,6 +226,7 @@ export default {
     generate () {
       const {
         version,
+        nickname,
         reproduction,
         steps,
         expected,
@@ -241,8 +238,8 @@ export default {
       } = this.attrs
 
       return generate(`
-### Version
-${version}
+### iconfont nickname
+${nickname}
 
 ${reproduction ? `### Reproduction link
 [${reproduction}](${reproduction})` : ``}
