@@ -15,7 +15,6 @@
       </VueFormField>
 
       <VueFormField
-        v-if="repo === 'vuejs/vue-devtools'"
         :title="i18n('browser-and-os-title')"
       >
         <VueInput
@@ -29,7 +28,7 @@
         />
       </VueFormField>
 
-      <template v-else>
+      <template>
         <VueFormField
           v-if="isCLI && doesNotSupportVueInfo"
           :title="i18n('node-and-os-title')"
@@ -62,7 +61,10 @@
           />
         </VueFormField>
 
-        <VueFormField :title="i18n('repro-title')">
+        <VueFormField
+          :title="i18n('repro-title')"
+          class="span-2"
+        >
           <VueInput
             type="url"
             v-model="attrs.reproduction"
